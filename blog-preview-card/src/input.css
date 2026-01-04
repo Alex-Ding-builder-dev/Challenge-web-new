@@ -1,0 +1,31 @@
+@font-face {
+    font-family: figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-figtree: figtree , sans-serif;
+
+    --color-yellow: #f4d04e;
+    --color-gray-950: #111111;
+    --color-gray-500: #6b6b6b;
+    --color-white: #ffffff;
+} 
+
+@utility text1 {
+    @apply text-[24px] leading-normal font-extrabold text-gray-950
+}
+
+@utility text2 {
+    @apply text-[16px] leading-normal font-medium text-gray-500
+}
+
+@utility text3 {
+    @apply text-[14px] leading-normal font-medium text-gray-950
+}
+
+@utility text3b {
+    @apply text-[14px] leading-normal font-extrabold text-gray-950
+}
