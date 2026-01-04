@@ -29,5 +29,5 @@
 
 @utility button {
     @apply bg-gray-700 rounded-[8px] py-[12px] hover:bg-green hover:text-gray-900
-    hover:cursor-pointer transition-colors duration-300 delay-75 hover:delay-[0s]
+    hover:cursor-pointer transition-colors transition-[0.2s_ease]
 }
