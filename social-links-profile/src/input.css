@@ -1,0 +1,33 @@
+@font-face {
+    font-family: inter;
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-inter: inter , sans-serif;
+
+    --color-gray-700: #333333;
+    --color-gray-800: #1f1f1f;
+    --color-gray-900: #141414;
+    --color-green: #c4f82a;
+    --color-white: #ffffff;
+}
+
+@utility text1 {
+    @apply font-inter font-semibold leading-normal text-[24px] text-white;
+}
+
+@utility text2b {
+    @apply font-inter font-bold leading-normal text-[14px] text-white;
+}
+
+@utility text2 {
+    @apply font-inter leading-normal text-[14px] text-white;
+}
+
+@utility button {
+    @apply bg-gray-700 rounded-[8px] py-[12px] hover:bg-green hover:text-gray-900
+    hover:cursor-pointer transition-colors duration-300 delay-75 hover:delay-[0s]
+}
