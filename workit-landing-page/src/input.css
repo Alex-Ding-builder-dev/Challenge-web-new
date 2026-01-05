@@ -1,0 +1,64 @@
+@font-face {
+    font-family: fraunces;
+    src: url(./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: manrope;
+    src: url(./assets/fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-fraunces: fraunces, sans-serif;
+    --font-manrope: manrope, sans-serif;
+
+    --color-green: #44ffa1;
+    --color-purple-100: #fcf8ff;
+    --color-purple-500: #584d62;
+    --color-purple-900: #24053e;
+    --color-white: #ffffff;
+
+    --breakpoint-xl: 90rem;
+}
+@utility d-text1{
+    @apply font-fraunces text-[80px] font-semibold leading-none
+}
+@utility d-text2{
+    @apply font-fraunces text-[56px] font-semibold leading-[120%]
+}
+@utility d-text3{
+    @apply font-fraunces text-[32px] font-semibold leading-[120%]
+}
+@utility d-text4{
+    @apply font-manrope text-[18px] leading-[180%] 
+}
+@utility d-text5{
+    @apply font-manrope text-[18px] font-bold leading-[180%]
+}
+@utility t-text1{
+    @apply font-fraunces text-[60px] font-semibold leading-none
+}
+@utility t-text2{
+    @apply font-fraunces text-[48px] font-semibold leading-[120%]
+}
+@utility t-text3{
+    @apply font-fraunces text-[28px] font-semibold leading-[120%]
+}
+@utility t-text4{
+    @apply font-manrope text-[16px] leading-[180%] 
+}
+@utility m-text1{
+    @apply font-fraunces text-[48px] font-semibold leading-none
+}
+@utility m-text2{
+    @apply font-fraunces text-[32px] font-semibold leading-[120%]
+}
+@utility m-text3{
+    @apply font-fraunces text-[24px] font-semibold leading-[120%]
+}
+@utility m-text4{
+    @apply font-manrope text-[16px] leading-[180%] 
+}
+
