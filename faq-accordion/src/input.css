@@ -1,0 +1,35 @@
+@font-face {
+    font-family: worksans;
+    src: url(./assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-worksans: worksana, sans-serif;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-purple-100: #f8eeff;
+    --color-purple-600: #8b6990;
+    --color-purple-950: #301534;
+    --color-violet: #ad28eb;
+
+    --spacing-100: 8px;
+    --spacing-200: 16px;
+    --spacing-300: 24px;
+    --spacing-400: 32px;
+    --spacing-500: 40px;
+}
+
+@utility text1 {
+    @apply font-worksans font-bold text-[56px] text-purple-950
+}
+
+@utility text2 {
+    @apply font-worksans font-semibold text-[18px] text-purple-950
+}
+
+@utility text3 {
+    @apply font-worksans text-[16px] leading-normal text-purple-600
+}
