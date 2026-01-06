@@ -1,0 +1,57 @@
+@font-face {
+    font-family: hg;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+@import "tailwindcss";
+
+@theme {
+    --font-hg: hg , sans-serif;
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-navy-50: #ecf2ff;
+    --color-navy-200: #cac9ff;
+    --color-navy-950: #303b59;
+    --color-blue-800: #1125d6;
+    --color-blue-50: #f3f4fd;
+    --color-yellow-50: #fffbf4;
+    --color-yellow-400: #ffb21e;
+    --color-red-50: #fff6f6;
+    --color-red-400: #ff5555;
+    --color-green-50:#f2fcf9;
+    --color-green-500: #00bb8f;
+
+    --background-image-ptow: linear-Gradient(to bottom, #4d21c9, rgba(37,33,201,0));
+    --background-image-ptob: linear-Gradient(to bottom, #7755ff, #2f2ce9)    
+}
+
+@utility box {
+    box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
+}
+
+
+@utility text1 {
+    @apply font-hg text-7xl leading-none font-extrabold;
+}
+@utility text2 {
+    @apply font-hg text-[56px] leading-none font-extrabold;
+}
+@utility text3 {
+    @apply font-hg text-[32px] leading-[130%] font-bold;
+}
+@utility text4 {
+    @apply font-hg text-[24px] leading-[130%] font-bold;
+}
+@utility text5b {
+    @apply font-hg text-[18px] leading-[130%] font-bold;
+}
+@utility text5m {
+    @apply font-hg text-[18px] leading-[130%] font-medium;
+}
+@utility text6b {
+    @apply font-hg text-[16px] leading-[130%] font-bold;
+}
+@utility text6m {
+    @apply font-hg text-[16px] leading-[130%] font-medium;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./output.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="w-full min-h-screen flex ">
+<div class="flex-1 flex md:px-[41px] md:py-[284px] md:items-center md:justify-center md:bg-blue-50">
+  <main class="flex w-full md:max-w-[736px] flex-col box bg-white md:rounded-4xl md:overflow-hidden md:flex-row">
+    <section class="bg-ptob px-[57.5px] py-8 rounded-b-4xl md:rounded-4xl  flex flex-col gap-6 md:gap-8 text-center items-center
+    md:flex-1 md:px-[69px] md:py-[45px] xl:px-[54px]">
+      
+        <h1 class="text5b text-navy-200 md:text4">Your Result</h1>
+
+        <div class="bg-ptow w-[140px] h-[140px] md:w-[200px] md:h-[200px] rounded-full flex flex-col justify-center">
+          <div class="text2 md:text1 text-white">76</div>
+          <div class="text6b md:text5b text-navy-200 opacity-[51.68%]">of 100</div>
+        </div>
+      
+        <div class="flex flex-col gap-2 md:gap-4">
+          <h3 class="text-white text4 xl:text3">Great</h3>
+          <p class="text6m text-navy-200 xl:text5m">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      
+    </section>
+      <section class="p-[30px] pt-6 flex flex-col gap-6 md:gap-8 md:px-[40px] md:py-[44px] md:flex-1">
+
+        <h2 class="text5b md:text4 text-navy-950">Summary</h2>
+
+        <article class="flex flex-col gap-4 ">
+          <div class="flex justify-between px-4 py-[17.5px] bg-red-50 rounded-[12px]">
+            <div class="flex gap-4 text6m md:text5m justify-center items-center text-red-400">
+              <img src="./assets/images/icon-reaction.svg" alt="">
+              Reaction
+            </div>
+
+            <span class="text6b md:text5b text-navy-950 flex items-center justify-center">80 <span class="pl-2 opacity-50">/ 100</span></span>
+          </div>
+
+          <div class="flex justify-between px-4 py-[17.5px] bg-yellow-50 rounded-[12px]">
+            <div class="flex gap-4 text6m md:text5m justify-center items-center text-yellow-400">
+              <img src="./assets/images/icon-memory.svg" alt="">
+              Memory
+            </div>
+
+            <span class="text6b md:text5b text-navy-950 flex items-center justify-center">92 <span class="pl-2 opacity-50">/ 100</span></span>
+          </div>
+
+          <div class="flex justify-between px-4 py-[17.5px] bg bg-green-50 rounded-[12px]">
+            <div class="flex gap-4 text6m md:text5m justify-center items-center text-green-500">
+              <img src="./assets/images/icon-verbal.svg" alt="">
+              Verbal
+            </div>
+
+            <span class="text6b md:text5b text-navy-950 flex items-center justify-center">61 <span class="pl-2 opacity-50">/ 100</span></span>
+          </div>
+
+          <div class="flex justify-between px-4 py-[17.5px] bg-blue-50 rounded-[12px]">
+            <div class="flex gap-4 text6m md:text5m justify-center items-center text-blue-800">
+              <img src="./assets/images/icon-visual.svg" alt="">
+              Visual
+            </div>
+            
+            <span class="text6b md:text5b text-navy-950 flex items-center justify-center">72 <span class="pl-2 opacity-50">/ 100</span></span>
+          </div>
+        </article>
+
+        <button class="rounded-[128px] py-[16.5px] bg-navy-950 text-white text5b">Continue</button>
+
+      </section>
+  </main>
+</div>
+
+</body>
+</html>
