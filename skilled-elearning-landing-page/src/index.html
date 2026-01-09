@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./output.css">
+  
+  <title>Frontend Mentor | Skilled e-learning landing page</title>
+</head>
+<body class="min-h-screen grid-cols-1 bg-white overflow-x-hidden w-full flex">
+  <div class="flex-1 overflow-hidden">
+    <nav class="px-5 py-4 flex justify-between items-center
+    md:px-11 md:py-6
+    xl:px-40 ">
+      <img src="./assets/logo-dark.svg" alt="skilled log" class="w-[79.3px] h-5
+      xl:w-[111px] xl:h-7">
+      <button type="button" class="dtext7 text-white px-8 py-4 bg-blue-900 rounded-[28px] hover:bg-blue-600 hover:cursor-a z-10
+      md:px-6 md:py-[10.5px]
+      xl:px-8 xl:py-4 ">Get Started</button>
+    </nav>
+    <header class="py-16 flex gap-12 flex-col overflow-hidden md:grid md:grid-cols-2 md:items-center
+    md:py-[105.5px] md:relative md:gap-6 md:overflow-visible
+    xl:gap-8 xl:py-[174.5px]">
+      <article class="px-5 md:px-11 xl:pl-40 md:overflow-hidden md:pr-0 md:mb-[41.5px] xl:pr-[87px] xl:mb-[110.5px]">
+        <h1 class="mb-6 tmtext1 text-blue-900 xl:dtext1">Maximize skill, minimize budget</h1>
+        <p class="mb-10 dtext5 text-grey">
+          Our modern courses across a range of in-demand skills will give you the
+          knowledge you need to live the life you want.
+        </p>
+        <button type="button" class="dtext7 text-white px-8 py-4 rounded-[28px] bg-gpink hover:cursor-a hover:bg-gpg
+        md:py-3 md:px-6 xl:py-4 xl:px-8">Get Started</button>
+      </article>
+      <picture class=" text-center">
+        <source media="(min-width: 1280px)" srcset="./assets/image-hero-desktop@2x.png">
+        <source media="(min-width: 768px)" srcset="./assets/image-hero-tablet@2x.png" class="">
+        <img src="./assets/image-hero-mobile@2x.png" alt="our members 29k, course hours 1,451" class="scale-120
+        md:absolute md:-top-43 md:scale-90 md:-right-73 md:origin-top-right md:h-[800px] md:w-[768px]
+        xl:scale-75 xl:-right-88 xl:-top-65 xl:min-h-[1291.3px] xl:min-w-[1440px]">
+      </picture>
+    </header>
+    <main class="pt-16 pb-20 px-5 grid grid-cols-1 gap-8 bg-greywhite
+    md:pb-36 md:px-11 md:grid-cols-2 md:auto-rows-fr
+    xl:px-40 xl:grid-cols-3 xl:gap-x-8 xl:gap-y-14">
+      <h2 class="p-8 rounded-[15px] bg-gpink tmtext3 text-white md:mt-7
+      md:pb-10 md:pt-16 xl:dtext3">Check out our most popular courses!</h2>
+      <section class="pt-16 pb-10 px-8 box bg-white rounded-[15px] flex flex-col gap-6 relative mt-7">
+          <img src="./assets/icon-animation.svg" alt="icon-animation" class="absolute -top-7">
+          <h3 class="tmtext4 text-blue-900t xl:dtext4">Animation</h3>
+          <p class="font-pjs font-bold text-[16px] leading-normal text-grey flex-1 xl:dtext5">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="" class="text-pink-600 dtext7 hover:cursor-a hover:text-pink-300 w-fit">Get Started</a>
+        </section>
+        <section class="pt-16 pb-10 px-8 box bg-white rounded-[15px] flex flex-col gap-6 relative mt-7">
+          <img src="./assets/icon-design.svg" alt="icon-design" class="absolute -top-7">
+          <h3 class="tmtext4 text-blue-900 xl:dtext4">Design</h3>
+          <p class="font-pjs font-bold text-[16px] leading-normal text-grey flex-1 xl:dtext5">
+            Create beautiful, usable interfaces to help shape the future of
+            how the web looks.
+          </p>
+          <a href="" class="text-pink-600 dtext7 hover:cursor-a hover:text-pink-300 w-fit">Get Started</a>
+        </section>
+        <section class="pt-16 pb-10 px-8 box bg-white rounded-[15px] flex flex-col gap-6 relative mt-7">
+          <img src="./assets/icon-photography.svg" alt="icon-photography" class="absolute -top-7">
+          <h3 class="tmtext4 text-blue-900 xl:dtext4">Photography</h3>
+          <p class="font-pjs font-bold text-[16px] leading-normal text-grey flex-1 xl:dtext5">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="" class="text-pink-600 dtext7 hover:cursor-a hover:text-pink-300 w-fit">Get Started</a>
+        </section>
+        <section class="pt-16 pb-10 px-8 box bg-white rounded-[15px] flex flex-col gap-6 relative mt-7">
+          <img src="./assets/icon-crypto.svg" alt="icon-crypto" class="absolute -top-7">
+          <h3 class="tmtext4 text-blue-900 xl:dtext4">Crypto</h3>
+          <p class="font-pjs font-bold text-[16px] leading-normal text-grey flex-1 xl:dtext5">
+            All you need to know to get started investing in crypto. Go from beginner
+            to advanced with this 54 hour course.
+          </p>
+          <a href="" class="text-pink-600 dtext7 hover:cursor-a hover:text-pink-300 w-fit">Get Started</a>
+        </section>
+        <section class="pt-16 pb-10 px-8 box bg-white rounded-[15px] flex flex-col gap-6 relative mt-7">
+          <img src="./assets/icon-business.svg" alt="icon-business" class="absolute -top-7">
+          <h3 class="tmtext4 text-blue-900 xl:dtext4">Business</h3>
+          <p class="font-pjs font-bold text-[16px] leading-normal text-grey flex-1 xl:dtext5">
+            A step-by-step playbook to help you start, scale, and sustain your business
+            without outside investment.
+          </p>
+          <a href="" class="text-pink-600 dtext7 hover:cursor-a hover:text-pink-300 w-fit">Get Started</a>
+        </section>
+    </main>
+    <footer class="bg-blue-900 flex py-6 px-5 justify-between items-center
+    md:px-11 xl:px-40">
+      <img src="./assets/logo-light.svg" alt="skilled log" class="w-[79.3px] h-5
+      xl:w-[111px] xl:h-7">
+      <button type="button" class="bg-gpurple text-white rounded-[28px] px-6 py-[10.5px] dtext7 hover:cursor-a hover:bg-gpp
+      xl:px-8 xl:py-4"><a href="">Get Started</a></button>
+    </footer>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-pjs: 'Plus Jakarta Sans' , sans-serif;
+
+    --color-blue-600: #666ca3;
+    --color-blue-900: #13183f;
+    --color-pink-300: #ffa7c3;
+    --color-pink-600: #f74780;
+    --color-grey: #83869a;
+    --color-white: #fff;
+
+    --background-image-gpink: linear-Gradient(to top,#f02aa6,#ff6f48);
+    --background-image-gpurple: linear-Gradient(to bottom,#4851ff,#f02aa6);
+    --background-image-greywhite: linear-Gradient(to bottom,#fff,#f0f1ff);
+    --background-image-gpg: linear-Gradient(to bottom,#ffffff80,#ffffff80),var(--background-image-gpink);
+    --background-image-gpp: linear-Gradient(to bottom,#ffffff80,#ffffff80),var(--background-image-gpurple);
+
+    --cursor-a: url('./assets/Pointer-Copy-13.svg'), pointer;
+}
+
+@utility box {
+    box-shadow: 0 25px 50px rgba(6, 22, 141, 0.0442);
+}
+
+@utility dtext1 {
+    @apply font-pjs font-extrabold text-[56px] leading-[120%]
+}
+@utility dtext2 {
+    @apply font-pjs font-extrabold text-[40px] leading-[120%]
+}
+@utility dtext3 {
+    @apply font-pjs font-extrabold text-[32px] leading-[120%]
+}
+@utility dtext4 {
+    @apply font-pjs font-extrabold text-2xl leading-[120%]
+}
+@utility dtext5 {
+    @apply font-pjs font-medium text-[18px] leading-normal
+}
+@utility dtext6 {
+    @apply font-pjs font-bold text-[16px] leading-normal
+}
+@utility dtext7 {
+    @apply font-pjs font-bold text-[18px] leading-normal
+}
+@utility tmtext1 {
+    @apply font-pjs font-extrabold text-[40px] leading-[120%]
+}
+@utility tmtext2 {
+    @apply font-pjs font-extrabold text-[32px] leading-[120%]
+}
+@utility tmtext3 {
+    @apply font-pjs font-extrabold text-2xl leading-[120%]
+}
+@utility tmtext4 {
+    @apply font-pjs font-extrabold text-[20px] leading-[120%]
+}
+@utility tmtext6 {
+    @apply font-pjs font-bold text-[14px] leading-[120%]
+}
