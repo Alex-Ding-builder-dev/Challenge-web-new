@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./output.css">
+
+  <script src="./submit.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="min-h-screen flex bg-grey-950">
+<div class="flex-1 flex items-center justify-center px-6">
+  
+    <main class="bg-g1 rounded-[15px] max-w-[412px] max-h-[416px]">
+      <!-- Rating state start -->
+      <section class="grid gap-6 mx-6 my-[28.5px] section1
+      md:my-8 md:gap-8">
+        <div class="bg-grey-900 w-10 h-10 rounded-full flex items-center justify-center
+        md:w-12 md:h-12">
+          <img src="./images/icon-star.svg" alt="icon-star" class="">
+        </div>
+
+        <div class="grid gap-4">
+          <h1 class="t2 text-white md:t1">How did we do?</h1>
+          <p class="t5r text-grey-500 md:t4r">
+            Please let us know how we did with your support request. All feedback is appreciated
+            to help us improve our offering!
+          </p>
+          <div class="t5b text-grey-500 flex justify-between md:t3 listen">
+            <div class="num click"><span class="translate-x-[1px] translate-y-[1px]">1</span></div> <div class="num click"><span class="translate-x-[1px] translate-y-[1px]">2</span></div> <div class="num click"><span class="translate-x-[1px] translate-y-[1px]">3</span></div> <div class="num click"><span class="translate-x-[1px] translate-y-[1px]">4</span></div> <div class="num click"><span class="translate-x-[1px] translate-y-[1px]">5</span></div>
+          </div>
+        </div>
+        <button class="t5b text-grey-950 bg-orange-500 rounded-[22.5px] py-4 hover:cursor-pointer hover:bg-white
+        md:t5s md:py-[12.5px] submit"><span class="inline-block  translate-y-0.5 translate-x-0.5">SUBMIT</span></button>
+      </section>
+      <!-- Rating state end -->
+      <!-- Thank you state start -->
+      <section class="mx-6 my-8 grid place-items-center text-center hidden section2
+      md:mx-8 md:my-10">
+        <img src="./images/illustration-thank-you.svg" alt="thank you">
+        <p class="my-6 text-orange-500 t5r px-3 py-1.5 bg-grey-900 rounded-[22.5px] md:my-8 md:t4r md:px-[19.5px]"><span class="inline-block translate-y-0.5">You selected <span class="number"></span><!-- Add rating here --> out of 5</span></p>
+        <h1 class="mb-4 t2 text-white md:t1">Thank you!</h1>
+        <p class="t5r text-grey-500 md:t4r">
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+      </section>
+      <!-- Thank you state end -->
+    </main>
+  
+  
+</div>
+</body>
+</html>
