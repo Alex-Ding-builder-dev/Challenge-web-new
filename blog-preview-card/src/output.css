@@ -174,12 +174,6 @@
   .static {
     position: static;
   }
-  .mx-auto {
-    margin-inline: auto;
-  }
-  .my-\[24px\] {
-    margin-block: 24px;
-  }
   .contents {
     display: contents;
   }
@@ -195,26 +189,11 @@
   .h-full {
     height: 100%;
   }
-  .min-h-full {
-    min-height: 100%;
-  }
   .min-h-screen {
     min-height: 100vh;
   }
   .w-\[32px\] {
     width: 32px;
-  }
-  .w-\[33\] {
-    width: 33;
-  }
-  .w-\[200px\] {
-    width: 200px;
-  }
-  .w-\[327px\] {
-    width: 327px;
-  }
-  .w-auto {
-    width: auto;
   }
   .max-w-\[384px\] {
     max-width: 384px;
@@ -225,23 +204,11 @@
   .flex-1 {
     flex: 1;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
-  .resize {
-    resize: both;
-  }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-nowrap {
-    flex-wrap: nowrap;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -269,10 +236,6 @@
   }
   .rounded-\[20px\] {
     border-radius: 20px;
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-\[1px\] {
     border-style: var(--tw-border-style);
@@ -345,17 +308,6 @@
   }
   .text-\[20px\] {
     font-size: 20px;
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .shadow {
-    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[1px_1px_var\(--color-gray-950\)\] {
-    --tw-shadow: 1px 1px var(--tw-shadow-color, var(--color-gray-950));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-\[8px_8px_var\(--color-gray-950\)\] {
     --tw-shadow: 8px 8px var(--tw-shadow-color, var(--color-gray-950));
