@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-outfit: 'Outfit' , sans-serif;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --color-blue-500: #8bacd9;
+    --color-blue-800: #2e405a;
+    --color-blue-900: #15263f;
+    --color-blue-950: #0d192c;
+    --color-cyan-400: #00fff8;
+}
+
+@utility t1 {
+    @apply font-semibold font-outfit text-[22px] leading-[125%]
+}
+@utility t2 {
+    @apply font-outfit font-light text-[18px] leading-[145%]
+}
+@utility t3s {
+    @apply font-outfit font-semibold text-[16px] leading-[125%]
+}
+@utility t3r {
+    @apply font-outfit text-[16px] leading-[125%]
+}
