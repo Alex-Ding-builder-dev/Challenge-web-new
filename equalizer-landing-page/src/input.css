@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-ibm: 'IBM Plex Sans', sans-serif;
+
+    --color-cyan: #66e2dc;
+    --color-orange: #fa7453;
+    --color-yellow: #ffb964;
+    --color-white: #fcfaf9;
+    --color-slate: #191826;
+}
+
+@utility dt1 {
+    @apply font-ibm font-bold text-[88px] leading-none tracking-[-1px]
+}
+@utility dt2 {
+    @apply font-ibm font-bold text-[64px] leading-[110%]
+}
+@utility dt3 {
+    @apply font-ibm font-bold text-[40px] leading-[110%]
+}
+@utility dt4 {
+    @apply font-ibm text-[20px] leading-normal
+}
+@utility dt5 {
+    @apply font-ibm text-[16px] leading-normal
+}
+@utility dt5b {
+    @apply font-ibm font-bold text-[16px] leading-normal
+}
+@utility dt6 {
+    @apply font-ibm font-bold text-[18px] leading-[180%]
+}
+@utility tt1 {
+    @apply font-ibm font-bold text-[64px] leading-none tracking-[-1px]
+}
+@utility tt4 {
+    @apply font-ibm text-[18px] leading-normal
+}
+@utility mt1 {
+    @apply font-ibm font-bold text-[40px] leading-none tracking-[-1px]
+}
+@utility mt4 {
+    @apply font-ibm text-[16px] leading-normal
+}
+
+@utility cr {
+    @apply cursor-[url('./assets/PointerCopy12.svg'),pointer]
+}
