@@ -224,9 +224,6 @@
   .table {
     display: table;
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-\[20px\] {
     height: 20px;
   }
@@ -238,9 +235,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
   }
   .w-\[17px\] {
     width: 17px;
@@ -317,6 +311,12 @@
   }
   .object-cover {
     object-fit: cover;
+  }
+  .object-none {
+    object-fit: none;
+  }
+  .object-left {
+    object-position: left;
   }
   .object-top {
     object-position: top;
@@ -453,13 +453,6 @@
       }
     }
   }
-  .hover\:fill-orange {
-    &:hover {
-      @media (hover: hover) {
-        fill: var(--color-orange);
-      }
-    }
-  }
   .hover\:text-orange {
     &:hover {
       @media (hover: hover) {
@@ -471,15 +464,6 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-slate);
-      }
-    }
-  }
-  .group-first\:hover\:fill-slate {
-    &:is(:where(.group):first-child *) {
-      &:hover {
-        @media (hover: hover) {
-          fill: var(--color-slate);
-        }
       }
     }
   }
@@ -621,6 +605,26 @@
       border-radius: 12px;
     }
   }
+  .md\:object-none {
+    @media (width >= 48rem) {
+      object-fit: none;
+    }
+  }
+  .md\:object-left {
+    @media (width >= 48rem) {
+      object-position: left;
+    }
+  }
+  .md\:object-top {
+    @media (width >= 48rem) {
+      object-position: top;
+    }
+  }
+  .md\:object-top-left {
+    @media (width >= 48rem) {
+      object-position: left top;
+    }
+  }
   .md\:p-12 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 12);
@@ -644,6 +648,11 @@
   .md\:pt-0 {
     @media (width >= 48rem) {
       padding-top: calc(var(--spacing) * 0);
+    }
+  }
+  .md\:pb-\[132px\] {
+    @media (width >= 48rem) {
+      padding-bottom: 132px;
     }
   }
   .md\:tt1 {
@@ -724,6 +733,26 @@
       scale: var(--tw-scale-x) var(--tw-scale-y);
     }
   }
+  .xl\:object-\[-10px_top\] {
+    @media (width >= 80rem) {
+      object-position: -10px top;
+    }
+  }
+  .xl\:object-\[368px_top\] {
+    @media (width >= 80rem) {
+      object-position: 368px top;
+    }
+  }
+  .xl\:object-center {
+    @media (width >= 80rem) {
+      object-position: center;
+    }
+  }
+  .xl\:object-top {
+    @media (width >= 80rem) {
+      object-position: top;
+    }
+  }
   .xl\:p-14 {
     @media (width >= 80rem) {
       padding: calc(var(--spacing) * 14);
@@ -732,6 +761,11 @@
   .xl\:px-40 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 40);
+    }
+  }
+  .xl\:pr-\[440px\] {
+    @media (width >= 80rem) {
+      padding-right: 440px;
     }
   }
   .xl\:dt1 {
@@ -758,15 +792,6 @@
     &:hover {
       @media (hover: hover) {
         & path {
-          fill: var(--color-slate);
-        }
-      }
-    }
-  }
-  .hover\:\[\&_svg\]\:fill-slate {
-    &:hover {
-      @media (hover: hover) {
-        & svg {
           fill: var(--color-slate);
         }
       }
