@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-red: 'RedHatDisplay' ,sans-serif;
+}
+
+@utility text1 {
+    @apply text-[28px] 
+}
