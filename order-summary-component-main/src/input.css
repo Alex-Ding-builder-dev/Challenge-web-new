@@ -3,9 +3,50 @@
 @import "tailwindcss";
 
 @theme {
-    --font-red: 'RedHatDisplay' ,sans-serif;
+    --font-red: 'Red Hat Display' ,sans-serif;
+
+    --color-gray-600: #717fa6;
+    --color-purple-500: #766cf1;
+    --color-blue-950: #1f2e55;
+    --color-blue-700: #382ae1;
+    --color-blue-150: #d6e1ff;
+    --color-blue-100: #e0e8ff;
+    --color-blue-50: #f7f9ff;
+
+    --breakpoint-lg: 90rem;
+
+    --shadow-card: 0 40px 40px -20px rgba(13,48,189,0.1518);
+    --shadow-button: 0 20px 20px 0 rgba(56, 42, 225, 0.1903);
 }
 
-@utility text1 {
-    @apply text-[28px] 
+@utility t1 {
+    @apply text-[28px] leading-[135%] font-black font-red
+}
+
+@utility t2 {
+    @apply text-[22px] leading-[135%] font-black font-red
+}
+
+@utility t3 {
+    @apply text-[16px] leading-[165%] font-black font-red  
+}
+
+@utility t3b {
+    @apply text-[16px] leading-[165%] font-bold font-red
+}
+
+@utility t3m {
+    @apply text-[16px] leading-[165%] font-medium font-red
+}
+
+@utility t4 {
+    @apply text-[15px] leading-[165%] font-black font-red
+}
+
+@utility t4b {
+    @apply text-[15px] leading-[165%] font-bold font-red
+}
+
+@utility t4m {
+    @apply text-[15px] leading-[165%] font-medium font-red
 }
