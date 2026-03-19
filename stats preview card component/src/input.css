@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-inter: 'Inter' , sans-serif;
+    --font-lexend: 'Lexend Deca' ,sans-serif;
+
+    --color-navy-950: #0a0c1c;
+    --color-blue-950: #1b1937;
+    --color-purple-500: #ab5cdb;
+
+    --breakpoint-lg: 90rem;
+}
+
+@utility t1 {
+    @apply font-inter text-[36px] leading-[125%] font-bold
+}
+
+@utility t2 {
+    @apply font-inter text-[28px] leading-[125%] font-bold
+}
+
+@utility t3 {
+    @apply font-inter text-[24px] leading-[120%] font-bold
+}
+
+@utility t4 {
+    @apply font-inter text-[15px] leading-[165%]
+}
+
+@utility t5 {
+    @apply font-lexend text-[12px] leading-[200%] tracking-[1px]
+}
+
+

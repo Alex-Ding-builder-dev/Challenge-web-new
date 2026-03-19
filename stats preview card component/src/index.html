@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="stylesheet" href="output.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="min-h-screen w-full flex">
+<div class="flex-1 flex items-center justify-center p-6 bg-navy-950
+md:px-[102px] lg:px-[156px]">
+  <main class="text-center bg-purple-500 max-w-[564px] rounded-[8px] overflow-hidden
+  md:text-left lg:flex lg:flex-row-reverse lg:max-w-[1440px]">
+    <picture class="">
+      <source media="(min-width: 1440px)" srcset="./images/image-header-desktop.jpg">
+      <img class="mix-blend-multiply opacity-75 object-cover
+      lg:max-w-[564px]" src="./images/image-header-mobile.jpg" alt="some people working">
+    </picture>
+    <article class="px-8 py-6 bg-blue-950
+    md:px-20 md:py-16 lg:max-w-[564px]">
+      
+        <h1 class="t2 text-white mb-2
+        md:t1 md:mb-6">Get <span class="text-purple-500">insights</span> that help your business grow.</h1>
+      
+        <p class="t4 text-white opacity-75 mb-10
+        md:mb-[72px]">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+      <div class="grid gap-8 
+      md:grid-cols-3 md:gap-16">
+        <div><div class="t3 text-white">10k+</div> <p class="t5 text-white opacity-60">COMPANIES</p></div>
+        <div><div class="t3 text-white">314</div> <p class="t5 text-white opacity-60">TEMPLATES</p></div>
+        <div><div class="t3 text-white">12M+</div> <p class="t5 text-white opacity-60">QUERIES</p></div>
+      </div>
+    </article>
+  </main>
+</div>
+</body>
+</html>
