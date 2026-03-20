@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-red: 'Red Hat Display' , sans-serif;
+
+    --breakpoint-lg: 90rem;
+
+    --color-cyan-600: #4d96a9;
+    --color-cyan-300: #8fe3f9;
+    --color-purple-600: #855fb1;
+    --color-purple-300: #d9b8ff;
+    --color-slate-900: #28283d;
+    --color-slate-600: #87879d;
+    --color-slate-300: #d1d1df;
+    --color-white: #fafafa;
+
+    --background-image-girl: url(./assets/mobile/image-footer.jpg);
+    --background-image-g2: url(./assets/tablet/image-footer.jpg);
+    --background-image-g3: url(./assets/desktop/image-footer.jpg);
+
+    --color-ac1: #71c0d4;
+    --color-ac2: #b18bdd;
+}
+
+@utility t1 {
+    @apply font-red text-[64px] leading-[110%] font-black 
+}
+@utility t2 {
+    @apply font-red text-[40px] leading-[110%] font-black
+}
+@utility t3 {
+    @apply font-red text-[16px] leading-[110%] tracking-[4px] font-black
+}
+@utility t4 {
+    @apply font-red text-[18px] leading-[110%] font-medium
+}
+@utility t5 {
+    @apply font-red text-[16px] leading-[150%] font-black 
+}
