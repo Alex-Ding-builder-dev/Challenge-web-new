@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,40..300&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-kumbh: 'Kumbh Sans' , sans-serif;
+
+    --breakpoint-lg: 90rem;
+
+    --color-gray-500: #6b7082;
+    --color-gray-100: #e8e9ec;
+    --color-blue-600: #19a1ae;
+    --color-blue-400: #41cbd3;
+    --color-navy-950: #2e3349;
+    
+    --background-image: linear-gradient(to bottom, #52ffee,#0989b4);
+    --shadow-box: 0 50px 100px -20 rgba(8, 70, 94, 0.25);
+}
+
+@utility t1b {
+    @apply font-kumbh leading-[125%] text-[18px] font-bold
+}
+@utility t1 {
+    @apply font-kumbh leading-[125%] text-[18px]
+}
+@utility t2 {
+    @apply font-kumbh leading-[125%] text-[14px]
+}
+@utility t3 {
+    @apply font-kumbh leading-[125%] text-[10px] tracking-[1.5px]
+}
+
+@utility bg {
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 622px;
+    background-position: right 45vw bottom 65vh , left 45vw top 50vh;
+}
+
+@utility bg2 {
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: 976px;
+    background-position: right 50vw bottom 35vh , left 50vw top 52vh;
+}

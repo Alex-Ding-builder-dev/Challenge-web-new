@@ -8,28 +8,48 @@
   
   <title>Frontend Mentor | Profile card component</title>
 
+  <link rel="stylesheet" href="output.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="min-h-screen w-full flex">
+  <div class="flex-1 grid place-items-center px-6 bg-blue-600 bg
+  md:bg2">
+    <main class="w-[326px] h-[374px] bg-white overflow-hidden rounded-[15px] shadow-box
+    md:w-[350px] relative z-10">
+      <svg class="w-auto h-[144px]" preserveAspectRatio="none" viewBox="0 0 350 140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="c"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient><linearGradient x1="50%" y1=".779%" x2="50%" y2="100%" id="d"><stop stop-color="#0989B4" stop-opacity="0" offset="0%"/><stop stop-color="#53FFEE" offset="99.94%"/></linearGradient><path id="a" d="M0 0h350v140H0z"/></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><use fill="#41CBD3" xlink:href="#a"/><g mask="url(#b)" opacity=".5"><g transform="translate(-11 -4)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(-11 91.63)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(-11 43.815)"><ellipse fill="url(#c)" transform="rotate(-90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(-90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(11.822 18.77)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(11.822 114.4)"><ellipse fill="url(#c)" transform="rotate(90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 14.834 14.8)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" transform="rotate(180 197.411 14.8)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(-90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g><g transform="translate(11.822 66.585)"><ellipse fill="url(#c)" transform="rotate(-90 60.479 14.8)" cx="60.479" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="14.834" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="151.767" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 106.123 14.8)" cx="106.123" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#c)" transform="rotate(-90 243.055 14.8)" cx="243.055" cy="14.8" rx="14.8" ry="14.834"/><ellipse fill="url(#d)" cx="197.411" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#d)" cx="334.344" cy="14.8" rx="14.834" ry="14.8"/><ellipse fill="url(#c)" transform="rotate(90 288.7 14.8)" cx="288.699" cy="14.8" rx="14.8" ry="14.834"/></g></g></g></svg>
+      <article class="px-[37px] pb-6 flex flex-col items-center
+       md:px-[49px]">
+        <img class="rounded-full border-5 border-white -mt-[53px] mb-[11px]
+        md:mb-4" src="./images/image-victor.jpg" alt="a man">
+        <div class="mb-2 flex gap-2">
+          <h1 class="t1b text-navy-950">Victor Crest</h1>
+          <span class="t1 text-gray-500">26</p>
+        </div>
+        <address class="t2 text-gray-500 not-italic">London</address>
+        <div class="h-px bg-gray-100 w-[326px] my-6
+        md:w-[350px]"></div>
+        <div class="w-full flex justify-between">
+          <section class="flex flex-col items-center gap-2">
+            <span class="t1b text-navy-950">80K</span>
+            <span class="t3 text-gray-500">Followers</span>
+          </section>
+          <section class="flex flex-col items-center gap-2">
+            <span class="t1b text-navy-950">803K</span>
+            <span class="t3 text-gray-500">Likes</span>
+          </section>
+          <section class="flex flex-col items-center gap-2">
+            <span class="t1b text-navy-950">1.4K</span>
+            <span class="t3 text-gray-500">Photos</span>
+          </section>
+          
+        </div>
+      </article>
+    </main>
   </div>
 </body>
 </html>
