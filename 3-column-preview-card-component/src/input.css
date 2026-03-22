@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-big: 'Big Shoulders' , sans-serif;
+    --font-le: 'Lexend Deca' ,sans-serif;
+
+    --color-gray-100: #f2f2f2;
+    --color-green-950: #004140;
+    --color-green-500: #19b89d;
+    --color-cyan-800: #006971;
+    --color-cyan-500: #26b5c0;
+    --color-gold-500: #d28625;
+    --color-gold-200: #ffd473;
+
+    --breakpoint-lg: 90rem;
+}
+
+@utility t1 {
+    @apply font-big font-bold text-[40px] leading-[120%] 
+}
+@utility t2 {
+    @apply font-le text-[15px] leading-[165%]
+}
