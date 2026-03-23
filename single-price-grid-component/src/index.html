@@ -8,43 +8,54 @@
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
+  <link rel="stylesheet" href="output.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<body class="min-h-screen w-full flex">
+  <div class="flex-1 grid place-items-center bg-teal-100 px-8 py-[25px]
+  md:py-40">
+    <main class="rounded-[8px] overflow-hidden shadow-box max-w-[311px]
+    md:max-w-[635px] md:grid md:grid-cols-2">
+      <section class="bg-white p-10
+      md:col-span-2">
+        <h1 class="t2 text-teal-500 mb-6">Join our community</h1>
+        <p class="t3 text-green-400 mb-2">30-day, hassle-free money back guarantee</p>
+        <p class="t4 text-gray-500">
+          Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </section>
+      <section class="bg-teal-500 py-6 px-[36.5px] text-white
+      md:p-10">
+        <h2 class="t3 mb-4">Monthly Subscription</h2>
+        <div class="flex items-center gap-2"><span class="t1">&dollar;29</span> <span class="t4 opacity-50">per month</span></div>
+        <p class="t4 mb-[29px]">Full access for less than &dollar;1 a day</p>
+        <button type="button" class="t4b bg-green-400 w-full py-[12.5px] rounded-[5px] shadow-button
+        cursor-pointer">Sign Up</button>
+      </section>
+      <section class="bg-teal-400 py-6 px-[36.5px] text-white
+      md:p-10">
+        <h2 class="t3 mb-4">Why Us</h2>
+        <div class="t5 opacity-75">
+          <p>Tutorials by industry experts</p>
+          <p>Peer &amp; expert code review</p>
+          <p>Coding exercises</p>
+          <p>Access to our GitHub repos</p>
+          <p>Community forum</p>
+          <p>Flashcard decks</p>
+          <p>
+            New videos every week
+          
+          </p>
+        </div>
+      </section>
+      
+    </main>
+  </div>
 </body>
 </html>

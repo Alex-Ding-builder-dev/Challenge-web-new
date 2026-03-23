@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-karla: 'Karla' , sans-serif;
+
+    --color-gray-500: #9aa7be;
+    --color-teal-500: #2ab3b1;
+    --color-teal-400: #4abfbd;
+    --color-teal-100: #e6eff5;
+    --color-green-400: #c0df33;
+
+    --breakpoint-lg: 90rem; 
+
+    --shadow-box: 0 15px 30px 0 rgba(0, 81, 171, 0.15);
+    --shadow-button: 0 10px 10px 0 rgba(0, 0, 0, 0.0973);
+}
+
+@utility t1 {
+    @apply font-karla leading-[115%] tracking-[-0.4px] text-[32px] font-bold
+}
+@utility t2 {
+    @apply font-karla leading-[115%] tracking-[-0.25] text-[24px] font-bold
+}
+@utility t3 {
+    @apply font-karla leading-[115%] tracking-[-0.25px] text-[18px] font-bold
+}
+@utility t4b {
+    @apply font-karla leading-[145%] tracking-[-0.25px] text-[16px] font-bold
+}
+@utility t4 {
+    @apply font-karla leading-[165%] tracking-[-0.5px] text-[16px]
+}
+@utility t5 {
+    @apply font-karla leading-[145%] text-[14px]
+}
