@@ -3,33 +3,466 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Challenge
-    </title>
+    <title>Frontend Challenge Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #667eea;
+            --secondary-color: #764ba2;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --hover-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 30px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 20px;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--hover-shadow);
+        }
+
+        .preview-container {
+            width: 100%;
+            height: 200px;
+            background: var(--bg-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .preview-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+            transform: scale(0.5);
+            transform-origin: 0 0;
+            width: 200%;
+            height: 200%;
+        }
+
+        .preview-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .preview-overlay {
+            opacity: 1;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            text-transform: capitalize;
+        }
+
+        .project-description {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: var(--bg-light);
+            color: var(--text-light);
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            width: 90%;
+            height: 90%;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .modal-frame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 10;
+            box-shadow: var(--card-shadow);
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            transform: rotate(90deg);
+            background: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: var(--text-light);
+            border-top: 1px solid var(--bg-light);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <ol>
-        <li><a href="./nft-preview-card/src/index.html">nft-preview-card</a></li>
-        <li><a href="./blog-preview-card/src/index.html">blog-preview-card</a></li>
-        <li><a href="./faq-accordion/src/index.html">faq-accordion</a></li>
-        <li><a href="./interactive-rating-component/src/index.html">interactive-rating-component</a></li>
-        <li><a href="./product-preview-card/src/index.html">product-preview-card</a></li>
-        <li><a href="./qr-code-component/src/index.html">qr-code-component</a></li>
-        <li><a href="./recipe_page/src/index.html">recipe_page</a></li>
-        <li><a href="./results-summary-component/src/index.html">results-summary-component</a></li>
-        <li><a href="./skilled-elearning-landing-page/src/index.html">skilled-elearning-landing-page</a></li>
-        <li><a href="./social-links-profile/src/index.html">social-links-profile</a></li>
-        <li><a href="./workit-landing-page/src/index.html">workit-landing-page</a></li>
-        <li><a href="./equalizer-landing-page/src/index.html">equalizer-landing-page</a></li>
-        <li><a href="./order-summary-component-main/src/index.html">order-summary-component-main</a></li>
-        <li><a href="./stats preview card component/src/index.html">stats preview card component</a></li>
-        <li><a href="./meet-landing-page/src/index.html">meet-landing-page</a></li>
-        <li><a href="./3-column-preview-card-component/src/index.html">3-column-preview-card-component</a></li>
-        <li><a href="./profile-card-component/src/index.html">profile-card-component</a></li>
-        <li><a href="./single-price-grid-component/src/index.html">single-price-grid-component</a></li>
-        <li><a href="./social-proof-section/src/index.html">social-proof-section</a></li>
-        <li><a href="./four-card-feature-section/src/index.html">four-card-feature-section</a></li>
-        <li><a href="./huddle-landing-page/src/index.html">huddle-landing-page</a></li>
-    </ol>
+    <div class="container">
+        <header>
+            <h1>Frontend Challenge Portfolio</h1>
+            <p class="subtitle">Collection of Frontend Projects</p>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="projectCount">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">Learning</div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="card">Card Components</button>
+                <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                <button class="filter-btn" data-filter="component">Interactive Components</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </main>
+
+        <footer>
+            <p>💚 Keep Learning, Keep Creating</p>
+        </footer>
+    </div>
+
+    <div class="modal" id="previewModal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">&times;</button>
+            <iframe class="modal-frame" id="modalFrame"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // PROJECTS CONFIGURATION - Add new projects here
+        // Format: { name: 'folder-name', path: 'path/to/index.html', category: 'card|landing|component', description: 'Project description' }
+        const projects = [
+            { name: 'nft-preview-card', path: './nft-preview-card/src/index.html', category: 'card', description: 'NFT preview card component' },
+            { name: 'blog-preview-card', path: './blog-preview-card/src/index.html', category: 'card', description: 'Blog article preview card' },
+            { name: 'faq-accordion', path: './faq-accordion/src/index.html', category: 'component', description: 'FAQ accordion component' },
+            { name: 'interactive-rating-component', path: './interactive-rating-component/src/index.html', category: 'component', description: 'Interactive rating component' },
+            { name: 'product-preview-card', path: './product-preview-card/src/index.html', category: 'card', description: 'Product preview card' },
+            { name: 'qr-code-component', path: './qr-code-component/src/index.html', category: 'component', description: 'QR code component' },
+            { name: 'recipe_page', path: './recipe_page/src/index.html', category: 'landing', description: 'Recipe page' },
+            { name: 'results-summary-component', path: './results-summary-component/src/index.html', category: 'component', description: 'Results summary component' },
+            { name: 'skilled-elearning-landing-page', path: './skilled-elearning-landing-page/src/index.html', category: 'landing', description: 'E-learning landing page' },
+            { name: 'social-links-profile', path: './social-links-profile/src/index.html', category: 'card', description: 'Social links profile' },
+            { name: 'workit-landing-page', path: './workit-landing-page/src/index.html', category: 'landing', description: 'Workit landing page' },
+            { name: 'equalizer-landing-page', path: './equalizer-landing-page/src/index.html', category: 'landing', description: 'Equalizer landing page' },
+            { name: 'order-summary-component-main', path: './order-summary-component-main/src/index.html', category: 'component', description: 'Order summary component' },
+            { name: 'stats preview card component', path: './stats preview card component/src/index.html', category: 'card', description: 'Stats preview card component' },
+            { name: 'meet-landing-page', path: './meet-landing-page/src/index.html', category: 'landing', description: 'Meet landing page' },
+            { name: '3-column-preview-card-component', path: './3-column-preview-card-component/src/index.html', category: 'card', description: 'Three column preview card component' },
+            { name: 'profile-card-component', path: './profile-card-component/src/index.html', category: 'card', description: 'Profile card component' },
+            { name: 'single-price-grid-component', path: './single-price-grid-component/src/index.html', category: 'component', description: 'Single price grid component' },
+            { name: 'social-proof-section', path: './social-proof-section/src/index.html', category: 'component', description: 'Social proof section' },
+            { name: 'four-card-feature-section', path: './four-card-feature-section/src/index.html', category: 'card', description: 'Four card feature section' },
+            { name: 'huddle-landing-page', path: './huddle-landing-page/src/index.html', category: 'landing', description: 'Huddle landing page' }
+        ];
+
+        function renderProjects(filter = 'all') {
+            const grid = document.getElementById('projectsGrid');
+            const filteredProjects = filter === 'all' 
+                ? projects 
+                : projects.filter(p => p.category === filter);
+
+            grid.innerHTML = filteredProjects.map(project => `
+                <div class="project-card" data-category="${project.category}">
+                    <div class="preview-container">
+                        <iframe class="preview-frame" src="${project.path}" loading="lazy"></iframe>
+                        <div class="preview-overlay">Click to Preview</div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">${project.name.replace(/-/g, ' ')}</h3>
+                        <p class="project-description">${project.description}</p>
+                        <div class="project-tags">
+                            <span class="tag">${getCategoryLabel(project.category)}</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="${project.path}" class="btn btn-primary" target="_blank">View Project</a>
+                            <button class="btn btn-secondary" onclick="openModal('${project.path}')">Preview</button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Update project count
+            document.getElementById('projectCount').textContent = projects.length;
+        }
+
+        function getCategoryLabel(category) {
+            const labels = {
+                'card': 'Card',
+                'landing': 'Landing Page',
+                'component': 'Component'
+            };
+            return labels[category] || category;
+        }
+
+        function openModal(src) {
+            const modal = document.getElementById('previewModal');
+            const frame = document.getElementById('modalFrame');
+            frame.src = src;
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('previewModal');
+            const frame = document.getElementById('modalFrame');
+            modal.classList.remove('active');
+            frame.src = '';
+        }
+
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                renderProjects(this.dataset.filter);
+            });
+        });
+
+        // Close modal on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Close modal on background click
+        document.getElementById('previewModal').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeModal();
+        });
+
+        // Initial render
+        renderProjects();
+    </script>
 </body>
 </html>
