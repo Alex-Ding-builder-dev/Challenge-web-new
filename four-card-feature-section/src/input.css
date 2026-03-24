@@ -13,6 +13,10 @@
     --color-cyan: #44d3d2;
     --color-blue: #549ef2;
     --color-orange: #fcae4a;
+
+    --shadow-box: 0 15px 30px -11px rgba(131, 166, 210, 0.5);
+
+
 }
 
 @utility t1 {
