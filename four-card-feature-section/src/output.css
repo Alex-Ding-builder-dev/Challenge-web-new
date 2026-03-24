@@ -11,6 +11,7 @@
     --spacing: 0.25rem;
     --font-weight-extralight: 200;
     --font-weight-semibold: 600;
+    --tracking-normal: 0em;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-poppins: 'Poppins' , sans-serif;
@@ -222,8 +223,14 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-\[314px\] {
+    width: 314px;
+  }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[540px\] {
+    max-width: 540px;
   }
   .flex-1 {
     flex: 1;
@@ -289,6 +296,9 @@
   .pb-\[47px\] {
     padding-bottom: 47px;
   }
+  .text-center {
+    text-align: center;
+  }
   .t1 {
     font-family: var(--font-poppins);
     font-size: 36px;
@@ -322,6 +332,8 @@
     font-size: 15px;
     --tw-leading: 140%;
     line-height: 140%;
+    --tw-tracking: var(--tracking-normal);
+    letter-spacing: var(--tracking-normal);
   }
   .t5 {
     font-family: var(--font-poppins);
@@ -352,6 +364,75 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .md\:top-4 {
+    @media (width >= 48rem) {
+      top: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:col-span-2 {
+    @media (width >= 48rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .md\:mb-\[74px\] {
+    @media (width >= 48rem) {
+      margin-bottom: 74px;
+    }
+  }
+  .md\:grid-cols-2 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:justify-self-center {
+    @media (width >= 48rem) {
+      justify-self: center;
+    }
+  }
+  .md\:px-\[54px\] {
+    @media (width >= 48rem) {
+      padding-inline: 54px;
+    }
+  }
+  .md\:py-20 {
+    @media (width >= 48rem) {
+      padding-block: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:t1 {
+    @media (width >= 48rem) {
+      font-family: var(--font-poppins);
+      font-size: 36px;
+      --tw-leading: 140%;
+      line-height: 140%;
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+      --tw-tracking: 0.25px;
+      letter-spacing: 0.25px;
+    }
+  }
+  .md\:t2 {
+    @media (width >= 48rem) {
+      font-family: var(--font-poppins);
+      font-size: 36px;
+      --tw-leading: 140%;
+      line-height: 140%;
+      --tw-font-weight: var(--font-weight-extralight);
+      font-weight: var(--font-weight-extralight);
+      --tw-tracking: 0.25px;
+      letter-spacing: 0.25px;
+    }
+  }
+  .md\:t4 {
+    @media (width >= 48rem) {
+      font-family: var(--font-poppins);
+      font-size: 15px;
+      --tw-leading: 140%;
+      line-height: 140%;
+      --tw-tracking: var(--tracking-normal);
+      letter-spacing: var(--tracking-normal);
+    }
   }
 }
 @property --tw-border-style {

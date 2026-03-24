@@ -29,7 +29,7 @@
     @apply font-poppins  text-[20px] leading-[135%] font-semibold
 }
 @utility t4 {
-    @apply font-poppins  text-[15px] leading-[140%] 
+    @apply font-poppins  text-[15px] leading-[140%] tracking-normal
 }
 @utility t5 {
     @apply font-poppins  text-[13px] leading-[160%]
