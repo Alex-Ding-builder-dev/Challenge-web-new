@@ -42,3 +42,9 @@
     background-repeat: no-repeat;
     background-size: 100vw;
 }
+
+@utility bgd {
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 90vw 100vh;
+}
