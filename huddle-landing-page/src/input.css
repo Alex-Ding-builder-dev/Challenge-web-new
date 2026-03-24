@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-poppins: 'Poppins' ,sans-serif;
+    --font-open: 'Open Sans',sans-serif;
+
+    --color-gray-400: #f96464;
+    --color-gray-100: #e1e8ee;
+    --color-blue-950: #00252e;
+    --color-pink-400: #ff52c1;
+    --color-purple-700: rgb(104,75,177);
+    --color-magenta-400: #e880e8;
+
+    --shadow-button: 1px 3px 5px 0 rgba(0, 0, 0, 0.269);
+
+    --breakpoint-lg: 90rem;
+}
+
+@utility t1 {
+    @apply font-poppins font-semibold leading-[125%] text-[40px]
+}
+@utility t2 {
+    @apply font-poppins font-semibold leading-[125%] text-[24px]
+}
+@utility t3 {
+    @apply font-poppins leading-[150%] text-[18px]
+}
+@utility t4 {
+    @apply font-open leading-[150%] text-[18px]
+}
+@utility t5 {
+    @apply font-open leading-[150%] text-[16px]
+}
+@utility t6 {
+    @apply font-poppins leading-[150%] text-[12px]
+}
+
+@utility bgm {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
