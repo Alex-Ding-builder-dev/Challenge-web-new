@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-league: 'League Spartan', sans-serif;
+
+    --color-purple-900: #512051;
+    --color-purple-300: #927b91;
+    --color-purple-100: #f7f2f7;
+    --color-pink-400: #ee69a4;
+    --color-orange-400: #ef9546;
+
+    --background-image: linear-gradient(to right bottom , #512051 ,#8a4389);
+
+}
+
+@utility t1 {
+    @apply font-league text-[56px] leading-[85%] tracking-[-2px] font-bold
+}
+@utility t2 {
+    @apply font-league text-[40px] leading-[85%] tracking-[-2px] font-bold
+}
+@utility t3 {
+    @apply font-league text-[19px] leading-[135%] tracking-[-0.6px] font-medium
+}
+@utility t4b {
+    @apply font-league text-[17px] font-bold
+}
+@utility t4m {
+    @apply font-league text-[17px] leading-[130%] tracking-[-0.3px] font-medium
+}
+@utility t4 {
+    @apply font-league text-[17px]
+}
+
+@utility bgm {
+    background-image: url(./images/bg-pattern-top-mobile.svg) ,url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 375px 232px, 1085px 673px;
+    background-position: top left, bottom -5vh  right 50% ;
+}
+
+@utility bgt {
+    background-image: url(./images/bg-pattern-top-mobile.svg) ,url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 375px 232px, 768px 477px;
+    background-position: top left, bottom right;
+}
+
+@utility bgd {
+    background-image: url(./images/bg-pattern-top-mobile.svg) ,url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 584px 362px, 1085px 673px;
+    background-position: top left, bottom right;
+}
