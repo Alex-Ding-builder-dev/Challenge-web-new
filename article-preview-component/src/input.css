@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-manrope: 'Manrope', sans-serif;
+
+    --color-grey-900: #48556a;
+    --color-grey-500: #6e8098;
+    --color-grey-400: #9daec2;
+    --color-grey-200: #ecf2f8;
+
+    --breakpoint-lg: 90rem;
+    
+    --shadow-main: 0 40px 40px -10px rgba(201, 213, 225, 0.5034);
+    --shadow-active: 0 10px 10px 0 rgba(201, 213, 225, 0.5034);
+}
+
+@utility t1 {
+    @apply font-manrope text-[20px] leading-[130%] tracking-[0.25px] font-bold
+}
+@utility t2m {
+    @apply font-manrope text-[13px] leading-[140%] tracking-[0.12%] font-medium
+}
+@utility t2b {
+    @apply font-manrope text-[13px] leading-[140%] tracking-[0.12%] font-bold
+}
+@utility t3 {
+    @apply font-manrope text-[13px] leading-[140%] tracking-[25%]
+}
+
+@utility activeb {
+    @apply max-md:data-[active='true']:bg-grey-900
+     max-md:data-[active='true']:-mx-[30px]
+     max-md:data-[active='true']:-my-[18px]
+     max-md:data-[active='true']:px-[30px]
+     max-md:data-[active='true']:py-[22px]
+     max-md:data-[active='true']:rounded-b-[10px]
+}
