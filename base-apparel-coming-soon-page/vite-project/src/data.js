@@ -1,10 +1,13 @@
+import logosrc from "./images/logo.svg"
+import imgsrc from "./images/hero-mobile.jpg"
+
 export default {
     logo: {
-        src: '/src/assets/images/logo.svg',
+        src: logosrc,
         alt: 'base apparel logo'
     },
     img: {
-        src: '/src/assets/images/hero-mobile.jpg',
+        src: imgsrc,
         alt: ''
     },
     span: "We're",

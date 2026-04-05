@@ -1,4 +1,6 @@
 import { useState } from "react";
+import svg1 from '../images/icon-arrow.svg'
+import svg2 from '../images/icon-error.svg'
 
 export default function Footer(crops) {
     const [isError, setIsError] = useState(false);
@@ -52,9 +54,9 @@ export default function Footer(crops) {
                     md:h-[56px] md:w-[100px]">
 
                     {isError && (
-                    <img src="/src/assets/images/icon-error.svg" alt="error" 
-                    className="-ml-26 absolute"/>)}
-                        <img src="/src/assets/images/icon-arrow.svg" alt="" />
+                    <img src={svg2} alt="error" 
+                    className="-ml-26 absolute md:-ml-36"/>)}
+                        <img src={svg1} alt="" />
                     </button>
                 </div>
                 {isError && (
