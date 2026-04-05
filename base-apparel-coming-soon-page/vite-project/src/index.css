@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-josefin: 'Josefin Sans' , sans-serif;
+
+    --color-gray-900: #423a3a;
+    --color-red-400: #f96464;
+    --color-pink-400: #ce9898;
+    
+    --background-image-g1: linear-gradient(to right bottom, #f8bfbf,#ee8b8b);
+    --background-image-g2: linear-gradient(to right bottom, #ffffff,#fff4f4);
+    --background-image-g3: linear-gradient(to right top, #ffffff,#fff1f1);
+
+    --shadow-button: 0 15px 20px 0 rgba(198, 110, 110, 0.2476);
+
+    --breakpoint-lg: 90rem;
+}
+
+@utility t1l {
+    @apply font-josefin text-[64px] leading-[100%] tracking-[17.5px] font-light
+}
+@utility t1s {
+    @apply font-josefin text-[64px] leading-[110%] tracking-[17.5px] font-semibold
+}
+@utility t2l {
+    @apply font-josefin text-[40px] leading-[100%] tracking-[10px] font-light
+}
+@utility t2s {
+    @apply font-josefin text-[40px] leading-[100%] tracking-[10px] font-semibold
+}
+@utility t3 {
+    @apply font-josefin text-[16px] leading-[215%] tracking-[0px]
+}
+@utility t4 {
+    @apply font-josefin text-[14px] leading-[155%] tracking-[0px]
+}
+@utility t5 {
+    @apply font-josefin text-[13px] leading-[215%] tracking-[0px]
+}
