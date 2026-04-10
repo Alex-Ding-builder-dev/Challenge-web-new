@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-libre: 'Libre Franklin',sans-serif;
+
+  --color-blue-950: #15202a;
+  --color-blue-500: #4c7bf3;
+  --color-blue-200: #c2d3ff;
+  --color-gray-400: #969696;
+  --color-gray-100: #ebebeb;
+  --color-gray-50: #fbfcff;
+  --color-red-400: #ff5466;
+  --color-green-550: #2ecc71;
+
+  --shadow-top: 0 0 7px 3px rgba(0, 0, 0, 0.0001);
+  --shadow-bottom: 0 5px 10px 2px rgba(76, 123, 243, 0.2304);
+
+  --breakpoint-lg: 90rem;
+}
+
+@utility t1b {
+  @apply font-libre font-bold text-[48px] leading-[125%]
+}
+@utility t1l {
+  @apply font-libre font-light text-[48px] leading-[125%]
+}
+@utility t2b {
+  @apply font-libre font-bold text-[20px] leading-[125%]
+}
+@utility t2l {
+  @apply font-libre font-light text-[20px] leading-[125%]
+}
+@utility t3se {
+  @apply font-libre font-semibold text-[16px] leading-[125%]
+}
+@utility t3l {
+  @apply font-libre font-light text-[16px] leading-[125%]
+}
+@utility t4se {
+  @apply font-libre font-semibold text-[12px] leading-[125%]
+}
+@utility t4l {
+  @apply font-libre font-light text-[12px] leading-[125%]
+}
+@utility t4i {
+  @apply font-libre italic text-[12px] leading-[125%]
+}
+@utility t5 {
+  @apply font-libre italic text-[10px] leading-[125%]
+}
