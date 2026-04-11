@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-poppins: 'Poppins',sans-serif;
+
+    --color-gray-900: #3d3b48;
+    --color-gray-200: #dedede;
+    --color-purple-700: #5e54a4;
+    --color-purple-400: #a6a1cf;
+    --color-purple-350: #bab7d4;
+    --color-green-400: #38cc8b;
+    --color-green-300: #77e2b3;
+    --color-red-400: #ff7979;
+
+    --shadow-button: 0 8px 0 0 rgba(0, 0, 0, 0.1469);
+    --inset-shadow-button2:inset 0 -4px 0 0 rgba(0, 0, 0, 0.0909);
+
+    --breakpoint-lg: 90rem;
+}
+
+@utility t1 {
+    @apply font-poppins font-bold text-[50px] leading-[110%] tracking-[-0.5px]
+}
+@utility t2 {
+    @apply font-poppins font-bold text-[28px] leading-[130%] tracking-[-0.3px]
+}
+@utility t3 {
+    @apply font-poppins font-medium text-[16px] leading-[165%]
+}
+@utility t4b {
+    @apply font-poppins font-bold text-[15px] leading-[175%] tracking-[0.25px]
+}
+@utility t4se {
+    @apply font-poppins font-semibold text-[15px] leading-[175%] tracking-[2px]
+}
+@utility t4r {
+    @apply font-poppins text-[15px] leading-[175%] tracking-[0.25px]
+}
+@utility t5b {
+    @apply font-poppins font-bold text-[11px] leading-[190%]
+}
+@utility t5m {
+    @apply font-poppins font-medium text-[11px] leading-[190%]
+}
+@utility t5mi {
+    @apply font-poppins font-medium italic text-[11px] leading-[155%]
+}
